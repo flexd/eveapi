@@ -1,5 +1,7 @@
 #eveapi
+[![GoDoc](https://godoc.org/github.com/flexd/eveapi?status.svg)](https://godoc.org/github.com/flexd/eveapi)
 ## EVE Online API Client
+eveapi is a library that provides access to the EVE Online XML API.
 
 This needs more work, ALPHA STATUS.
 Barely anything is done, API subject to change.
