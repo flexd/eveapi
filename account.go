@@ -35,7 +35,7 @@ type APIKey struct {
 
 //APIKeyInfoRow details the characters the api key is for
 type APIKeyInfoRow struct {
-	ID              string `xml:"characterID,attr"`
+	ID              int    `xml:"characterID,attr"`
 	Name            string `xml:"characterName,attr"`
 	CorporationID   int    `xml:"corporationID,attr"`
 	CorporationName string `xml:"corporationName,attr"`
