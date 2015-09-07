@@ -1,5 +1,5 @@
 #evelib
-
+[ ![Codeship Status for vivace-io/evelib](https://codeship.com/projects/656ddcc0-3548-0133-5cc9-26087cd1871c/status?branch=master)](https://codeship.com/projects/100743)
 ## EVE Online API Clients
 evelib is a library providing access to Eve Online's various APIs and Endpoints as well as Eve-Central's market API.
 
