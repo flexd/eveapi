@@ -1,4 +1,4 @@
-package eveapi
+package xmlapi
 
 const (
 	//AccountAPIKeyInfoURL is the endpoint for api key info

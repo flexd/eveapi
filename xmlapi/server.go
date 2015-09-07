@@ -1,4 +1,4 @@
-package eveapi
+package xmlapi
 
 const (
 	ServerStatusURL = "/server/ServerStatus.xml.aspx"
