@@ -1,5 +1,5 @@
-// Package eveapi implements access to EVE Onlines XML APi
-package eveapi
+// Package xmlapi implements access to EVE Onlines XML APi
+package xmlapi
 
 import (
 	"encoding/xml"

@@ -1,4 +1,4 @@
-package eveapi
+package xmlapi
 
 import (
 	"errors"
@@ -40,7 +40,6 @@ func (api API) Name2ID(char string) (string, error) {
 	} else {
 		return "", errors.New("Name2ID: No such character")
 	}
-	return "", nil
 }
 
 // Namees2ID is a convenience wrapper around CharacterName.

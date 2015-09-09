@@ -1,4 +1,4 @@
-package eveapi
+package xmlapi
 
 import (
 	"encoding/xml"
