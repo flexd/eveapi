@@ -82,7 +82,7 @@ type MarketOrder struct {
 	CharID       int     `xml:"charID,attr"`
 	StationID    int     `xml:"stationID,attr"`
 	VolEntered   int     `xml:"volEntered,attr"`
-	VolRemaining int     `xml:"volRemaining,attr"`
+	VolRemaining int64   `xml:"volRemaining,attr"`
 	MinVolume    int     `xml:"minVolume,attr"`
 	TypeID       int     `xml:"typeID,attr"`
 	Range        int     `xml:"range,attr"`
@@ -94,10 +94,10 @@ type MarketOrder struct {
 }
 
 //MarketOrders returns the market orders for a given character
-func (api API) MarketOrders(charID int) (*MarketOrdersResult, error) {
+func (api API) MarketOrders(charID int64) (*MarketOrdersResult, error) {
 	output := MarketOrdersResult{}
 	args := url.Values{}
-	args.Add("characterID", strconv.Itoa(charID))
+	args.Add("characterID", strconv.FormatInt(charID,10))
 	err := api.Call(MarketOrdersURL, args, &output)
 	if err != nil {
 		return nil, err
